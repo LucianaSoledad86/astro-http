@@ -51,7 +51,7 @@ export const PUT: APIRoute = async ({ params, request }) => {
 
   return new Response(
     JSON.stringify({
-        method: '',
+        method: 'PUT',
         ...body,
     }), 
     { 
