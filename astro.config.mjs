@@ -19,7 +19,7 @@ export default defineConfig({
   // npx astro add netlify
   // adapter: cloudflare(),
   integrations: [mdx(), sitemap()],
-  // output: "static",
+  output: "server",
   adapter: netlify(),
 });
 
