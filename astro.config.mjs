@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-
 import netlify from "@astrojs/netlify";
 
 // import cloudflare from "@astrojs/cloudflare";
@@ -19,7 +18,7 @@ export default defineConfig({
   // npx astro add netlify
   // adapter: cloudflare(),
   integrations: [mdx(), sitemap()],
-  output: "static",
+  output: "server",
   adapter: netlify(),
 });
 
